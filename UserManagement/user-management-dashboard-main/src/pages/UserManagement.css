@@ -1,0 +1,321 @@
+.page-header {
+  margin-bottom: 18px;
+}
+
+.user-management {
+  width: 100%;
+}
+
+.user-management h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.user-management .subtitle {
+  margin-top: 6px; 
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.02)
+  );
+
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  width: 320px;
+}
+
+.search-box .icon {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.search-box input {
+  border: none;
+  background: none;
+  color: #e5e7eb;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-box input::placeholder {
+  color: #6b7280;
+} 
+
+.filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.filters select {
+  background: #020617;
+  color: #fff;
+  border: 1px solid #1f2937;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.filters select:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.reset {
+  background: none;
+  border: none;
+  color: #c084fc;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px 8px;
+}
+
+.reset:hover {
+  background-color: #c084fc10;
+}
+
+.table {
+  background: radial-gradient(
+      120% 120% at 0% 0%,
+      #0b1025 0%,
+      #020617 60%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+/* .table-body {
+  display: flex;
+  flex-direction: column;
+} */
+
+.row {
+  display: grid;
+  grid-template-columns: 2.4fr 2fr 1.4fr 1.2fr 0.4fr;
+  align-items: center;
+  padding: 16px 20px;
+  height: 37px;
+  color: #e5e7eb;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.01)
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.row.header {
+  background: linear-gradient(
+      180deg,
+      #020617,
+      #020617
+  );
+  height: 15px;
+  color: #9ca3af;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-top: none;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.row:not(.header):hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.user-cell img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.user-cell strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-cell small {
+  display: block;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* EMAIL */
+.row span {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/* BADGES BASE */
+.role,
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+/* ROLE COLORS */
+.role.admin {
+  background: #f5d0fe;
+  color: #86198f;
+}
+
+.role.collection-admin {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.role.analyst {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* STATUS COLORS + DOT */
+.status::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status.active {
+  background: #dcfce7;
+  color: #166534;
+}
+.status.active::before {
+  background: #16a34a;
+}
+
+.status.invited {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+.status.invited::before {
+  background: #4f46e5;
+}
+
+.status.disabled {
+  background: #e5e7eb;
+  color: #374151;
+}
+.status.disabled::before {
+  background: #6b7280;
+}
+
+/* ACTION DOTS */
+.dots {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+.dots:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dropdown {
+  height: 30px;                         /* CONTROL HEIGHT */
+  padding: 0 10px;
+  display: flex;
+  align-items: center;                 /* vertical center */
+  gap: 6px;
+  border-radius: 8px;
+  /* background: #020617; */
+  /* border: 1px solid #1f2937; */
+}
+.dropdown select {
+  height: 100%;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.dropdown-label {
+  font-size: 15px;
+  color: #9ca3af;
+}
+
+.table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Pagination buttons */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pagination button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.pagination button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.pagination button.active {
+  background: #111827;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.pagination span {
+  padding: 0 4px;
+  color: #9ca3af;
+}
+
+
+

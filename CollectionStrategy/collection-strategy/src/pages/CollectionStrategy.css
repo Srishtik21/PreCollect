@@ -1,0 +1,149 @@
+.collection-strategy {
+  color: #e5e7eb;
+  width: 100%;
+  height: auto;
+}
+
+/* HEADER */
+.cs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.cs-header h1 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.cs-header p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+
+/* SELECT */
+.cs-select {
+  margin-bottom: 30px;
+}
+
+.cs-select label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.cs-select select {
+  width: 100%;
+  background: #020617;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+  padding: 10px 12px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.cs-select .hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* CARDS */
+.cs-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+/* CARD */
+.strategy-card {
+  position: relative;
+  background: linear-gradient(180deg, #020617, #030712);
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-head h3 {
+  font-size: 15px;
+}
+
+.day {
+  background: #111827;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.desc {
+  font-size: 13px;
+  color: #d1d5db;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* BADGES */
+.badge {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.green {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+.gray {
+  background: #1f2937;
+  color: #d1d5db;
+}
+
+.orange {
+  background: #7c2d12;
+  color: #fdba74;
+}
+
+.red {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+/* FOOTER */
+.cs-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.next-btn {
+  background: linear-gradient(135deg, #6d28d9, #9333ea);
+  color: white;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.next-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
