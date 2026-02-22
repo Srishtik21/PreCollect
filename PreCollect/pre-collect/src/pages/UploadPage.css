@@ -1,0 +1,218 @@
+.action-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;                    /* KEY FIX */
+
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #2d3356;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  background: #0e1325;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+/* .upload-logo {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(169, 112, 255, 0.15);
+  color: #c084fc;
+
+  font-size: 18px;
+} */
+
+.upload-logo {
+  width: 46px;
+  height:46px;
+  border-radius: 50%;
+  background: rgba(169, 112, 255, 0.15);
+  color: #c084fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.upload-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.upload-title {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.upload-title span {
+  color: #a970ff;
+}
+
+.upload-subtitle {
+  font-size: 13px;
+  color: #9aa4bf;
+  margin-bottom: 16px;
+}
+
+.browse-btn {
+  padding: 8px 16px;
+  background: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* File List */
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  max-height: 36vh;      /* adjust as you like */
+  overflow-y: auto;
+  padding-right: 6px;     /* space for scrollbar */
+
+}
+
+.file-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.file-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.file-list::-webkit-scrollbar-thumb {
+  background: #2d3356;
+  border-radius: 10px;
+}
+
+.file-list::-webkit-scrollbar-thumb:hover {
+  background: #3b4270;
+}
+
+
+/* File Card */
+.file-card {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #182049, #12163a);
+  padding: 14px 18px;
+  border-radius: 14px;
+  color: #e5e7eb;
+}
+
+/* LEFT SECTION */
+.file-left {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  padding-right: 12px;
+}
+
+.file-icon {
+  background: #1f2348;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* DETAILS */
+.file-details {
+  width: 100%;
+}
+
+.file-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.file-size {
+  font-size: 12px;
+  color: #9aa4bf;
+}
+
+/* PROGRESS */
+.file-progress {
+  background: #2a2f55;
+  height: 6px;
+  border-radius: 10px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #d946ef, #f9a8d4);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.file-status {
+  font-size: 12px;
+  color: #a7f3d0;
+}
+
+/* RIGHT SECTION */
+.file-right {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.file-percent {
+  font-size: 12px;
+  color: #9aa4bf;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #9aa4bf;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 5px !important;
+}
+
+.delete-btn:hover {
+  color: #ff6b6b;
+}
+
+.file-status {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.file-status.uploading {
+  color: #facc15; /* yellow */
+}
+
+.file-status.completed {
+  color: #86efac; /* green */
+}
+
+.page-container {
+  min-height: 100vh;          /* KEY FIX */
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,23 @@
+.app-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* BODY STARTS BELOW TOP BAR */
+.app-body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+/* MAIN DASHBOARD AREA */
+.app-content {
+  flex: 1;
+  min-width: 0;
+  padding: 20px 24px;
+  background: radial-gradient(circle at top left, #111827, #020617);
+}
+
+
